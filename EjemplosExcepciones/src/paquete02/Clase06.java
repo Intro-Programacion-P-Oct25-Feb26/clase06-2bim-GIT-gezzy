@@ -22,11 +22,11 @@ public class Clase06 {
     }
 
     public static int escribirNumero() {
+        Scanner entrada = new Scanner(System.in);
         int num = 0;
         boolean bandera = true;
         while (bandera)
         try {
-            Scanner entrada = new Scanner(System.in);
             num = entrada.nextInt();
             if (num % 2 != 0 || num < 0) {
                 throw new Exception("Número Incorrecto");
