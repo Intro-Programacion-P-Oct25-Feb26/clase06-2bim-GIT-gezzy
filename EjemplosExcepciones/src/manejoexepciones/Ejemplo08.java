@@ -26,6 +26,11 @@ public class Ejemplo08 {
             System.out.printf("Resultado %.2f", resultado2);
         }
         catch(Exception e){
+            /*
+            Al tratarse de una clase "padre" Exception recoge todos los erros
+            posibles de try. La limitacion radica cuando queremos particularizar
+            errores para hacer algo en base a cada uno.
+            */
             
             System.out.printf(" Lo sentimos hay un error de tipo %s\n", e);
         
