@@ -28,6 +28,15 @@ public class Ejemplo051 {
 
                 System.out.printf("Resultado %d\n", resultado);
                 bandera = false;
+                /*
+                El codigo se ejecuta y sigue funcionando hasta que el usuario
+                ingrese los datos requeridos, en caso de que lo haga se compara
+                la variable bander en el ciclo while y se acaba el programa.
+                Por otra parte mientras el usuario ingrese valores no validos
+                los catch se encargan de presentar el error del que se trata
+                y la bandera no cambia, por lo que el programa sigue funcionando
+                hasta que el usuario finalmente inghrese los datos correctos.
+                */
             } catch (InputMismatchException inputMismatchException) {
 
                 System.out.printf("Existe un error de tipo %s\n",
